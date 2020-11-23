@@ -38,6 +38,9 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "repository": {
+    "url": "https://github.com/sorrycc/esbuild-webpack-plugin"
+  },
   "devDependencies": {
     "@types/babel__traverse": "^7.0.13",
     "@types/jest": "^26.0.4",
