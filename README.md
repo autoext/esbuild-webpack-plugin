@@ -7,9 +7,13 @@ Use [esbuild](https://github.com/evanw/esbuild) as minifier for webpack.
 [彻底告别编译 OOM，用 esbuild 做压缩器](https://zhuanlan.zhihu.com/p/139219361)。
 
 ## Install
-
+- set `.npmrc`
+```
+@autoext:registry=https://npm.pkg.github.com
+```
+- install
 ```bash
-$ yarn add esbuild-webpack-plugin --dev
+npm install --save-dev @autoext/esbuild-webpack-plugin
 ```
 
 ## Webpack config
