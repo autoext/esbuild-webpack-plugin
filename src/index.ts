@@ -91,15 +91,15 @@ export default class ESBuildPlugin {
                 compilation.updateAsset(file, () => {
                   if (devtool) {
                     return new SourceMapSource(
-                      result.js || '',
+                      result.code || result.js || '',
                       file,
-                      result.jsSourceMap as any,
+                      (result.map || result.jsSourceMap) as any,
                       source,
                       map,
                       true,
                     );
                   } else {
-                    return new RawSource(result.js || '');
+                    return new RawSource(result.code || result.js || '');
                   }
                 });
               }

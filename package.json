@@ -22,10 +22,8 @@
   "author": "chencheng <sorrycc@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "webpack": "^4.0.0"
-  },
-  "dependencies": {
-    "esbuild": "^0.7.15"
+    "webpack": "^4.0.0",
+    "esbuild": "^0.8.12"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
